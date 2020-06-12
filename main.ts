@@ -16,11 +16,11 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
-`, mySprite, 70, 0)
+`, playerSprite, 70, 0)
 })
 let projectile: Sprite = null
-let mySprite: Sprite = null
-mySprite = sprites.create(img`
+let playerSprite: Sprite = null
+playerSprite = sprites.create(img`
 . . . . . . f f f f . . . . . . 
 . . . . f f f 2 2 f f f . . . . 
 . . . f f f 2 2 2 2 f f f . . . 
@@ -38,4 +38,4 @@ mySprite = sprites.create(img`
 . . . . . f f f f f f . . . . . 
 . . . . . f f . . f f . . . . . 
 `, SpriteKind.Player)
-controller.moveSprite(mySprite)
+controller.moveSprite(playerSprite)
